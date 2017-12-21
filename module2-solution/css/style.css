@@ -1,0 +1,106 @@
+/********** Base styles **********/
+body{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  display: block;
+  font-family: helvetica;
+}
+.container-fluid{
+  position: relative;
+}
+section {
+  background-color: #999999;
+  border:3px solid black;
+  position: relative;
+}
+p{
+  padding:5px;
+}
+h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.h {
+  width: 135px;
+  height: 30px;
+  border: 2px solid black;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  text-align: center;
+}
+h2{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+#pick{
+  background-color: #d59898;
+}
+#red{
+  background-color: #c14543;
+  color: #fefefe;
+}
+#yellow{
+  background-color: #e5d198;
+}
+.row{
+  padding: 0 15px;
+}
+*{box-sizing: border-box;}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  h1 {
+    margin: 30px 0 60px 0;
+  }
+  section {
+    padding-top:15px;
+    float: left;
+    width: 30%;
+    min-height: 120px;
+    margin: 0 15px;
+  }
+  .h{
+    margin:0;
+  }
+  .row :last-child {
+    margin-left: 5px;
+  }
+}
+/********** Medium and small devices **********/
+@media (min-width: 768px) and (max-width: 1199px) {
+  h1 {
+    margin: 20px 0 40px 0;
+  }
+  section {
+    padding:15px;
+    float: left;
+    width: 48%;
+    min-height: 130px;
+    margin: 15px 1%;
+  }
+  .last {
+    width:98%;
+  }
+  #red{
+    width:145px;
+  }
+}
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+ section {
+    width:80%;
+    padding:15px;
+    min-height: 120px;
+    margin: 25px 10%;
+  }
+  #red{
+    width:145px;
+  }
+}
